@@ -116,66 +116,6 @@ padding-top:12px;
 font-size:18px;
 color:#0b2f63;
 }
-.slider-wrapper{
-position:relative;
-display:flex;
-align-items:center;
-}
-
-.slider-container{
-overflow:hidden;
-width:100%;
-}
-
-.slider{
-display:flex;
-gap:20px;
-transition:0.4s;
-}
-
-.slide{
-min-width:220px;
-background:#fff;
-border-radius:14px;
-overflow:hidden;
-box-shadow:0 8px 20px rgba(0,0,0,.08);
-text-align:center;
-}
-
-.slide img{
-width:100%;
-height:200px;
-object-fit:cover;
-}
-
-.slide h3{
-padding:10px;
-font-size:16px;
-color:#0b2f63;
-}
-
-/* tombol panah */
-.nav{
-position:absolute;
-top:50%;
-transform:translateY(-50%);
-background:#0b2f63;
-color:#fff;
-border:none;
-font-size:24px;
-padding:10px 14px;
-cursor:pointer;
-border-radius:50%;
-z-index:10;
-}
-
-.nav.left{
-left:-10px;
-}
-
-.nav.right{
-right:-10px;
-}
 </style>
 </head>
 <body>
@@ -269,49 +209,44 @@ Dengan standar penyimpanan yang baik dan pelayanan responsif, kami berkomitmen m
 <p>Produk seafood premium & frozen berkualitas dari CV Fresh Laut Jaya</p>
 </div>
 
-<div class="slider-warpper">
-  
-<button class="nav left" onclick="slideLeft()">‹</button>
+<div class="gallery-grid">
 
-<div class="slider-container">
-<div class="slider" id="productSlider">
-  
-<div class="slide">
+<div class="gallery-item">
 <img src="WhatsApp Image 2026-04-29 at 10.12.29.jpeg" alt="Aysencoho Salmon Sashimi Grade">
 <h3>Aysencoho salmon sashimi grade<h3>
 </div>
 
-<div class="slide">
+<div class="gallery-item">
 <img src="WhatsApp Image 2026-04-29 at 10.12.28.jpeg" alt="Norway salmon whole sashimi grade">
 <h3>Norway salmon whole sashimi grade<h3>
 </div>
   
-<div class="slide">
+<div class="gallery-item">
 <img src="kerapu merah 2.jpg" alt="Gerapu merah">
 <h3>Gerapu merah</h3>
 </div>
 
-<div class="slide">
+<div class="gallery-item">
 <img src="Kembung .jpg" alt="Gembung kuring">
 <h3>Gembung kuring<h3>
 </div>
   
-<div class="slide">
+<div class="gallery-item">
 <img src="Smoked Duck.jpg" alt="Smoked Duck/Daging bebek">
 <h3>Smoked Duck/Daging bebek</h3>
 </div>
 
-<div class="slide">
+<div class="gallery-item">
 <img src="WhatsApp Image 2022-07-07 at 22.08.12.jpeg" alt="Bawal tambak">
 <h3>Bawal tambak</h3>
 </div>
 
-<div class="slide">
+<div class="gallery-item">
 <img src="WhatsApp Image 2026-01-14 at 10.13.54.jpeg" alt="Udang kelong">
 <h3>Udang kelong<h3>
 </div>
 
-<div class="gslide">
+<div class="gallery-item">
 <img src="WhatsApp Image 2022-07-07 at 22.23.34.jpeg" alt="Cod fish/ikan salju">
 <h3>Cod fish/Ikan Salju</h3>
 </div>
@@ -495,23 +430,6 @@ loading="lazy">
 <div class="copy">© 2026 CV Fresh Laut Jaya. All Rights Reserved.</div>
   
 </footer>
-<script>
-let slider = document.getElementById("productSlider");
 
-function slideLeft(){
-slider.scrollBy({
-left: -250,
-behavior: "smooth"
-});
-}
-
-function slideRight(){
-slider.scrollBy({
-left: 250,
-behavior: "smooth"
-});
-}
-</script>
-  
 </body>
 </html>
